@@ -3,7 +3,7 @@
     "description":  "Gist CLI tool using node.js",
     "keywords":     ["gist", "cli", "github", "tools"],
     "author":       "Jacob Chapel <jacob.chapel@gmail.com>",
-    "version":      "0.1.0",
+    "version":      "0.1.1",
     "licenses":     [{
       "type":       "MIT",
       "url":        "http://github.com/chapel/ngist/raw/master/LICENSE"

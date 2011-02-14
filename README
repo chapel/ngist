@@ -24,6 +24,9 @@ Usage: ngist [options] [-f file.ext] [files...]
               
  Use clipboard
     ngist -c file.js
+
+ Set description
+    ngist -f file.js -d 'This is a description'
               
  Login and set user and token
     ngist -f file.js -l -u user -t fj920df

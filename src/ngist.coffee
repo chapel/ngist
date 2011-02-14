@@ -17,6 +17,7 @@ run = ->
   return getFiles() if (opt.f or opt.file) and not (opt.c or opt.clip)
   return getClip() if (opt.c or opt.clip) and not (opt.f or opt.file)
   
+  
   anError 'You cannot use files and clipboard together.' if (opt.c or opt.clip) and (opt.f or opt.file)
   anError 'File or clipboard not specified. For help: ngist -h' unless (opt.f or opt.file) or (opt.c or opt.f)
 
@@ -90,6 +91,7 @@ getFiles = ->
         anError "File not found: #{file}"
       gist["file_ext[gistfile#{i+1}]"] = path.extname file
       gist["file_name[gistfile#{i+1}]"] = path.basename file
+      gist['description'] = opt.d or opt.description if opt.d or opt.description
       gist["file_contents[gistfile#{i+1}]"] = fs.readFileSync file, 'utf8'
       gist['action_button'] = 'private' if (opt.p or opt.private)
       if i == arr.length - 1 then emitter.emit 'filesDone'
@@ -115,6 +117,7 @@ getClip = ->
     anError 'Problem getting contents of clipboard' if err
     gist['file_ext[gistfile1]'] = path.extname opt.c or opt.clip
     gist['file_name[gistfile1]'] = opt.c or opt.clip
+    gist['description'] = opt.d or opt.description if opt.d or opt.description
     gist['file_contents[gistfile1]'] = stdout
     gist['action_button'] = 'private' if (opt.p or opt.private)
     if opt.l or opt.login
@@ -138,6 +141,7 @@ usage = ->
               
               -f, --file         use file(s) for gist
               -c, --clip         use clipboard for gist
+              -d, --description  set description for gist
               -p, --private      make private gist
               -l, --login        use github.com credentials
               -u, --username     github.com username
@@ -156,6 +160,9 @@ usage = ->
               
               Use clipboard
                 ngist -c file.js
+                
+              Set description
+                ngist -f file.js -d 'This is a description'
               
               Login and set user and token
                 ngist -f file.js -l -u user -t fj920df
