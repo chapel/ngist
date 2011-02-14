@@ -1,3 +1,35 @@
 
 
 ngist - Gist CLI tool using node.js
+
+Usage: ngist [options] [-f file.ext] [files...]
+              
+ -f, --file         use file(s) for gist
+ -c, --clip         use clipboard for gist
+ -p, --private      make private gist
+ -l, --login        use github.com credentials
+ -u, --username     github.com username
+ -t, --token        github.com API token
+ -o, --out          copy new gist url to clipboard
+ -h, --help         display this help message
+              
+              
+ Examples
+              
+ Single File
+    ngist -f file.js
+              
+ Multiple Files
+    ngist -f file.js file2.js file3.js
+              
+ Use clipboard
+    ngist -c file.js
+              
+ Login and set user and token
+    ngist -f file.js -l -u user -t fj920df
+                
+ Login after user and token are set
+    ngist -f file.js -l
+              
+ Private gist
+    ngist -p -f file.js
