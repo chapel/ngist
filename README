@@ -6,6 +6,7 @@ Usage: ngist [options] [-f file.ext] [files...]
               
  -f, --file         use file(s) for gist
  -c, --clip         use clipboard for gist
+ -d, --description  set description for gist
  -p, --private      make private gist
  -l, --login        use github.com credentials
  -u, --username     github.com username
