@@ -65,8 +65,8 @@ ngist_text.js
 	var files = [{name: 'file1.js', content: "function(){ console.log('x'); };"}, 
 				{name: 'file2.js', content: "function(){ test.x; };"}];
 	var options = {
-		user: chapel, // Your username!
-		token: asa09fjew0f, // [Github Account](https://github.com/account#admin_bucket)
+		user: "chapel", // Your username!
+		token: "asa09fjew0f", // [Github Account](https://github.com/account#admin_bucket)
 		description: 'This is an example gist', // Set for whole gist and is optional.
 		private: true; // Set to true if you want the gist to be private, otherwise omit.
 	};
@@ -81,8 +81,8 @@ ngist_files.js
 	
 	var files = ['file1.js', 'file2.js'];
 	var options = {
-		user: chapel, 
-		token: asa09fjew0f, 
+		user: "chapel", 
+		token: "asa09fjew0f", 
 		description: 'This is an example gist', 
 		private: true; 
 	};
@@ -99,8 +99,8 @@ ngist_files.coffee
 	
 	files = ['file1.js', 'file2.js']
 	options = 
-		user: chapel
-		token: pajsdfjoafe
+		user: "chapel"
+		token: "pajsdfjoafe"
 		description: 'This is an example gist'
 		private: true;
 		
@@ -124,4 +124,4 @@ Takes an array of objects, as well as an object that has optional parameters lik
 Inspired By
 -----------
 
-The original CLI tool was inspired by [defunkt's gist](https://github.com/defunkt/gist) as well as those on [#node.js](irc://freenode.net) that gave advice and criticism. It is always welcome.
+The original CLI tool was inspired by [defunkt's gist](https://github.com/defunkt/gist) as well as those on [#node.js](irc://irc.freenode.net) that gave advice and criticism. It is always welcome.
