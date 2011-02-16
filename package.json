@@ -1,9 +1,9 @@
 {
     "name":         "ngist",
-    "description":  "Gist CLI tool using node.js",
+    "description":  "Gist module and CLI tool using node.js",
     "keywords":     ["gist", "cli", "github", "tools"],
     "author":       "Jacob Chapel <jacob.chapel@gmail.com>",
-    "version":      "0.1.1",
+    "version":      "0.2.0",
     "licenses":     [{
       "type":       "MIT",
       "url":        "http://github.com/chapel/ngist/raw/master/LICENSE"
@@ -20,6 +20,6 @@
     },
     "main" : "./lib/ngist",
     "bin":          {
-      "ngist":       "./lib/ngist.js"
+      "ngist":       "./lib/cli.js"
     }
 }
