@@ -62,8 +62,13 @@ ngist_text.js
 
 	var ngist = require('ngist');
 	
-	var files = [{name: 'file1.js', content: "function(){ console.log('x'); };"}, 
-				{name: 'file2.js', content: "function(){ test.x; };"}];
+	var files = [{
+		name: 'file1.js', 
+		contents: "function(){ console.log('x'); };"
+	}, {
+		name: 'file2.js', 
+		contents: "function(){ test.x; };"
+	}];
 	var options = {
 		user: "chapel", // Your username!
 		token: "asa09fjew0f", // [Github Account](https://github.com/account#admin_bucket)
