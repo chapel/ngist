@@ -71,7 +71,7 @@ ngist_text.js
 	}];
 	var options = {
 		user: "chapel", // Your username!
-		token: "asa09fjew0f", // [Github Account](https://github.com/account#admin_bucket)
+		token: "asa09fjew0f", // Github API Token https://github.com/account#admin_bucket
 		description: 'This is an example gist', // Set for whole gist and is optional.
 		private: true; // Set to true if you want the gist to be private, otherwise omit.
 	};
