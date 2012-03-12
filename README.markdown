@@ -4,6 +4,7 @@ ngist
 ngist is a node.js module and CLI tool for easy posting of [gists](http://gist.github.com).
 
 
+
 Installation
 ------------
 
